@@ -1,0 +1,14 @@
+{
+  "name": "day3",
+  "version": "1.0.0",
+  "description": "this is a live class",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "subham dey",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}
