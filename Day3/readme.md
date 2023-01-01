@@ -33,4 +33,7 @@
 - parcel also does consistent Hashing algorithms to cache things up
 - parcel is a zero config bundler
 - parcel is taking the help of the packages and all the node-modules
-- 
+- Transitive dependencies --> where one package needs an another package for help and than that package needs another package its like a dependency tree.
+- parcel does tree shaking means removing unwanted code (example some library has many helper functions so parcel will ignore all the other helper functions)
+- Babel is used to transpilation
+- Browserlist
