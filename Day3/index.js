@@ -24,6 +24,25 @@ const divu = React.createElement(
   { style: { border: "2px solid red" }, id: "container", key: "h3" },
   [heading1, heading2, lists]
 );
-const newway = <h1 style={{ color: "red" }}>Namaste Reatc</h1>;
+const Component = () => (
+  <>
+    <div>
+      <h2>Hello i am H2 tag</h2>
+      <h1 style={{ color: "red" }}>Namaste React</h1>;
+    </div>
+  </>
+);
+const Compo = () => (
+  <>
+    <div>
+      {Component()}
+      <h2>Hello i am H2 tag</h2>
+      <h1 style={{ color: "red" }}>Namaste React</h1>;
+    </div>
+  </>
+);
+
+// const newway =
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(divu);
+root.render(<Compo />);
+// root.render(C<ompo>);
