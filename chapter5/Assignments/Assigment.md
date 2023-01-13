@@ -31,3 +31,10 @@ import * as Huru from "./ABC.js"
 ```
 ## What are React Hooks?
 - Hooks are just built in functions that allow us to use state and lifecycle methods inside functional components 
+- Rules 
+- Hooks should not be called inside loops,conditions or nested functions
+- Hooks should be inside React functional components 
+## Why do we use usestate?
+- useState hook is used to maintain the state in our React application.
+- It keeps track of the state changes.
+- When a component is re-rendered it changes the state of our component.
