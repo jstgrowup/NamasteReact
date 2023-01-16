@@ -1,5 +1,6 @@
-export const IMAGE_CDN_URL =
+export const IMG_URL =
   "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
+
 export const restaurantList = [
   {
     type: "restaurant",
@@ -724,7 +725,7 @@ export const restaurantList = [
         iconType: "EMPTY",
       },
       promoted: false,
-      avgRating: "--",
+      avgRating: "4.0",
       totalRatings: 0,
       new: false,
     },

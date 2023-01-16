@@ -1,25 +1,25 @@
 {
-  "name": "day3",
+  "name": "assignment4",
   "version": "1.0.0",
-  "description": "this is a live class",
+  "description": "",
+  "main": "App.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "subham dey",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.20.7",
-    "babel-plugin-transform-remove-console": "^6.9.4",
+    "buffer": "^5.7.1",
     "parcel": "^2.8.2",
     "process": "^0.11.10"
   },
   "dependencies": {
+    "axios": "^1.2.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "browserslist": [
-    "last 10 Chrome versions"
-  ]
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.2",
+    "react-shimmer-effects-18": "^1.0.4"
+  }
 }
