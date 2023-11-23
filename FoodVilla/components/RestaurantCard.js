@@ -7,9 +7,10 @@ export const RestaurantCard = ({
   cloudinaryImageId,
   avgRating,
 }) => {
+  console.log(`${IMG_URL}/${cloudinaryImageId}`);
   return (
     <div key={id} className="card">
-      <img src={`${IMG_URL}/${cloudinaryImageId}`} alt="" />
+      <img src={`${IMG_URL}/${cloudinaryImageId}`} alt="sds" />
       <div className="name-rating">
         <h2>{name}</h2>
         <h4>{avgRating}</h4>

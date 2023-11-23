@@ -17,11 +17,8 @@ const RestaurantMenu = () => {
     const data = await axios.get(
       `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=29.9680035&lng=77.55520659999999&restaurantId=${id}`
     );
-    // console.log(
-    //   data?.data?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]
-    //     ?.card?.card
-    // );
-    console.log(data?.data?.data?.cards[0]?.card?.card?.info);
+
+    // console.log(data?.data?.data?.cards[0]?.card?.card?.info);
     setRestaurantsDetails(data?.data?.data?.cards[0]?.card?.card?.info);
     setRestaurantsMenu(
       data?.data?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]
