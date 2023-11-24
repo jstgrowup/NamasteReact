@@ -1,0 +1,3 @@
+- if the browser is really old than this polyfill will converet the new form of code to an older form of code
+- polyfill is converting one form of code to an other form of code 
+- babel does this work
