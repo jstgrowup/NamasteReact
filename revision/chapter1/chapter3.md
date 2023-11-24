@@ -1,3 +1,10 @@
 - if the browser is really old than this polyfill will converet the new form of code to an older form of code
 - polyfill is converting one form of code to an other form of code 
 - babel does this work
+- createElement is pain so we will use JSX
+- JSX is known as javascript XML
+- the react want to write the html in our JS file
+- is JSX html inside JS --> this is not right html inside JS this is HTML like syntax (syntactic sugar) it is not at all HTML inside JS
+- How does jsx is doing this ? this is done by the babel so here babel is doing this means the conversion of the Html like syntax to the HTML DOM
+- JSX ==>(babel) React.createElement ==> Object ==>(reactDOM) HTML(DOM)
+- Readibility, usability
