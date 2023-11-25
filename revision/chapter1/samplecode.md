@@ -1,3 +1,5 @@
+
+``
 import React from "react";
 import ReactDOM from "react-dom/client";
 // hot module reload
@@ -20,11 +22,25 @@ import ReactDOM from "react-dom/client";
 //   },
 //   "Heading 2 for my use"
 // );
-const HeadingUsingJSX = () => (
-  <h1 tabIndex="1" className="header">
-    Heading
-  </h1>
-);
+const Title = () => {
+ return <img
+    src="https://lh3.googleusercontent.com/p/AF1QipMf9w4RomHXrUkQKvrxtPdjp3SLadP05HDzXlH2=w1080-h608-p-no-v0"
+    alt="no Image"
+  />;
+};
+const HeadingUsingJSX = () => {
+  return (
+    <div>
+      <Title/>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Cart</li>
+      </ul>
+    </div>
+  );
+};
 // this is JSX
 // const box = React.createElement(
 //   "div",
@@ -35,7 +51,7 @@ const HeadingUsingJSX = () => (
 //   [headingUsingJSX]
 // );
 
-const Head = () => {
+const AppLayout = () => {
   return (
     <div>
       {/* {HeadingUsingJSX()} */}
@@ -44,6 +60,8 @@ const Head = () => {
     </div>
   );
 };
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Head />);
+root.render(<AppLayout />);
+``
+
+``
