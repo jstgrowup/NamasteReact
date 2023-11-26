@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { IMAGE_CDN } from "../config/config";
+import { Link } from "react-router-dom";
 const validateUser = () => {
   return true;
 };
@@ -14,8 +15,8 @@ const Header = () => {
       <Title />
       <div>
         <ul>
-          <li>Home</li>
-          <li>About</li>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
           <li>Contact</li>
           <li>Cart</li>
         </ul>

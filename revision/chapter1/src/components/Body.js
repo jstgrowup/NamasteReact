@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 let restaurantsList = [];
 const filterData = (searchText, allRestaurants) => {
-  return allRestaurants.filter((item) => item?.info?.name?.includes(searchText));
+  return allRestaurants.filter((item) =>
+    item?.info?.name?.includes(searchText)
+  );
 };
 
 const Body = () => {
@@ -17,13 +19,14 @@ const Body = () => {
 
   async function getRestaurants() {
     try {
-      console.log("here");
+      
       const data = await fetch(
         "https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.3408905&lng=92.70335750000001&is-seo-homepage-enabled=true"
       );
       let maindata = await data.json();
       let resData =
-        maindata.data.cards[4].card.card.gridElements.infoWithStyle.restaurants;
+        maindata?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants;
 
       setAllRestaurants(resData);
       setRestaurants(resData);
